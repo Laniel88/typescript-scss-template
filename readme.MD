@@ -1,15 +1,14 @@
-# NO-FRAMEWORKS-TYPESCRIPT-APP-STARTER
-
-This template repository contains scaffolding for web application that is going to be developed using "Vanilla" TypeScript - typescript without any frameworks
+# Typescript Scss Template (no framework)
 
 # Tools
 
 To achieve that Webpack, with some plugins and loaders is used.
 * ts-loader - loader for compiling .ts files and bundling it into bundle.js
-* css-loader - loader for compiling styles , MiniCssExtractPlugin - for putting them into separate output css file
+* css-loader, sass-loader - loader for compiling styles , MiniCssExtractPlugin - for putting them into separate output css, scss file
 * HtmlWebpackPlugin - plugin for fetching index.html entry point from sources and putting it into output folder.
+* gh-pages - deploy tool for github pages
 
-# How to install / run / build
+# How to install / run / build / deploy
 
 * run `npm install` to fetch dependencies,
 * run `npm start` to start local server,
