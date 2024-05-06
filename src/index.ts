@@ -1,14 +1,14 @@
-import './app.css';
+import './app.scss';
 
 function main(): void {
-    const button = document.querySelector("#testButton");
-    button?.addEventListener("click", testSubmitHandler);
+    const button = document.querySelector("#testButton")
+    button?.addEventListener("click", testSubmitHandler)
 }
 
 function testSubmitHandler(e: Event): void {
     e.preventDefault();
-    const outputElement = document.querySelector('#output');
-    outputElement.textContent = 'Scripts work!';
+    const outputElement = document.querySelector('#output')
+    outputElement.textContent = 'Scripts work!'
 }
 
-main();
+main()

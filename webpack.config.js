@@ -12,13 +12,13 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.css'],
+    extensions: ['.tsx', '.ts', '.js', '.css', '.scss'],
   },
   output: {
     filename: 'bundle.js',
@@ -30,7 +30,9 @@ module.exports = {
       title: 'no-frameworks-typescript-app-starter',
       template: 'src/index.html',
     }),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "styles.css"
+    }),
   ],
 
   devServer: {
